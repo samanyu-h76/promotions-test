@@ -17,7 +17,7 @@ import google.generativeai as genai
 
 # ---------- FIREBASE SETUP ---------- #
 if not firebase_admin._apps:
-    cred = credentials.Certificate('/content/restaurant-data-backend-firebase-adminsdk-fbsvc-121da829d8.json')
+    cred = credentials.Certificate('restaurant-data-backend-firebase-adminsdk-fbsvc-121da829d8.json')
     firebase_admin.initialize_app(cred)
 
 db = firestore.client()
